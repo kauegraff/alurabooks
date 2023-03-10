@@ -1,0 +1,147 @@
+.carrossel__titulo{
+    font-weight: 700;
+    font-size: 18px;
+    background-color: var(--branco);
+    text-align: center;
+    color: var(--laranja);
+    text-transform: uppercase;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev, 
+.swiper-button-next{
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card{
+    background: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em 1em;
+    padding: 1em;
+}
+
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo__descricao{
+    font-size: 16px;
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.nome-livro__descricao{
+    font-size: 18px;
+    color: var(--azul);
+    font-weight: 700;
+    margin: 0.5em 0;
+    
+}
+
+.descricao__texto{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{
+    display: flex;
+}
+
+.botao__favorito{
+    margin: 0 1em;
+}
+
+.botao__descricao{
+    background-color: var(--laranja);
+    padding: 1em 2.7em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.imagem__descricao{
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+.imagem__avaliacao{
+    margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .carrossel__titulo{
+        padding: 1.5em 0;
+        font-size: 26px;
+    }
+
+    .swiper{
+        width: 60%;
+    }
+
+    .swiper-button-prev, 
+    .swiper-button-next {
+        display: block;
+        margin-top: 1em;
+    }
+
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+    }
+
+    .card{
+        width: 45%;
+        margin: 3em auto;
+    }
+
+}
+
+@media screen and (min-width: 1728px){
+    .container__carrossel{
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+
+    .swiper-pagination{
+        margin: 1em 0;
+    }
+
+    .swiper{
+        width: 62%;
+    }
+
+    .titulo__descricao{
+        font-size: 32px;
+    }
+    
+    .descricao__texto{
+        font-size: 16px;
+    }
+
+    .descricao{
+        margin-right: 2em;
+    }
+
+    .card{
+        width: 80%;
+        margin-left: 4em;
+    }
+}
